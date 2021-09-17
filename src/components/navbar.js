@@ -1,16 +1,28 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import down from "../assets/images/icons/down-ar.png";
 
 function Navbar() {
   const { pathname } = useLocation();
   const [display, setDisplay] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const toggle = () => {
     setDisplay(!display);
   };
+  const navD = () => {
+    setNav(!nav);
+  };
+
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [nav]);
   return (
     <div className='App'>
       <div className='navB'>
@@ -20,15 +32,86 @@ function Navbar() {
           <div class='nav-header'>
             <div class='nav-title'>Madhuri Furnitures</div>
           </div>
-          <div class='nav-btn'>
+          <div class='nav-btn' onClick={navD}>
             <label for='nav-check'>
               <span></span>
               <span></span>
               <span></span>
             </label>
           </div>
+          {nav === true ? (
+            <div class='nav-links'>
+              <NavLink
+                exact
+                to='/'
+                className='category__nav'
+                activeClassName='category__active'
+                onClick={navD}>
+                Home
+              </NavLink>
 
-          <div class='nav-links'>
+              <NavLink
+                exact
+                to='/category'
+                isActive={() =>
+                  ["/category", "/almira", "/artwork", "/bed"].includes(
+                    pathname
+                  )
+                }
+                className='category__nav category__headerBlk'
+                activeClassName='category__active'>
+                <span className='cat__arr'>
+                  <p>Categories</p>
+
+                  <img src={down} alt='down' onClick={toggle} />
+                </span>
+
+                {display == true ? (
+                  <ul className='d-none-desk'>
+                    <Link to='/almira' onClick={navD}>
+                      Almirah
+                    </Link>
+                    <Link to='/artwork' onClick={navD}>
+                      Artwork
+                    </Link>
+                    <Link to='/bed' onClick={navD}>
+                      Bed
+                    </Link>
+                    <Link to='/'>Chairs</Link>
+                    <Link to='/'>Door</Link>
+                    <Link to='/'>Dining Sets</Link>
+                    <Link to='/'>Sculpture</Link>
+                    <Link to='/'>Tables</Link>
+                    <Link to='/'>Wood</Link>
+                  </ul>
+                ) : (
+                  <p></p>
+                )}
+              </NavLink>
+              <NavLink
+                exact
+                to='/about'
+                className='category__nav'
+                activeClassName='active category__active'
+                onClick={navD}>
+                About Us
+              </NavLink>
+              <NavLink
+                exact
+                to='/contact'
+                className='category__nav'
+                activeClassName='active category__active'
+                onClick={navD}>
+                Contact Us
+              </NavLink>
+            </div>
+          ) : (
+            <p></p>
+          )}
+
+          {/* laptop view */}
+
+          <div class='nav-links nav-desk'>
             <NavLink
               exact
               to='/'
@@ -63,27 +146,13 @@ function Navbar() {
                   <Link to='/'>Wood</Link>
                 </ul>
               </div>
-              {display == true ? (
-                <ul className='d-none-desk'>
-                  <Link to='/almira'>Almirah</Link>
-                  <Link to='/artwork'>Artwork</Link>
-                  <Link to='/bed'>Bed</Link>
-                  <Link to='/'>Chairs</Link>
-                  <Link to='/'>Door</Link>
-                  <Link to='/'>Dining Sets</Link>
-                  <Link to='/'>Sculpture</Link>
-                  <Link to='/'>Tables</Link>
-                  <Link to='/'>Wood</Link>
-                </ul>
-              ) : (
-                <p></p>
-              )}
             </NavLink>
             <NavLink
               exact
               to='/about'
               className='category__nav'
-              activeClassName='active category__active'>
+              activeClassName='active category__active'
+              onClick={toggle}>
               About Us
             </NavLink>
             <NavLink
@@ -95,6 +164,7 @@ function Navbar() {
             </NavLink>
           </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
