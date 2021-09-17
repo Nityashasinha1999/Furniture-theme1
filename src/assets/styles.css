@@ -419,6 +419,7 @@ color: #2F243A;
           display: flex;
           flex-direction: column;
           align-items: center;
+          padding-bottom: 80px;
           justify-content: center;
       }
       .a__about .about__heading{
@@ -430,12 +431,13 @@ color: #2F243A;
       }
       .a__about p{
           padding: 0px 15px;
-          font-family: Poppins;
+          font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: 500;
           font-size: 20px;
           line-height: 30px;
           color: #404040;
+          padding-top: 30px;
       }
       .a__profile{
           background: #3E6364;
@@ -459,6 +461,7 @@ color: #2F243A;
           font-style: normal;
           font-weight: 500;
           padding-bottom: 36px;
+          padding-top: 20px;
           font-size: 20px;
           line-height: 30px;
           color: #FFFFFF;
@@ -487,6 +490,7 @@ color: #2F243A;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-top: 40px;
         padding-bottom: 40px;
         row-gap: 35px;
       }
