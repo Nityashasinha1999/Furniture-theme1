@@ -1,9 +1,10 @@
 /** @format */
 
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const { pathname } = useLocation();
   return (
     <div className='App'>
       <div className='navB'>
@@ -32,7 +33,16 @@ function Navbar() {
 
             <NavLink
               exact
+              // to={
+              //   window.location.pathname === "/almira" ||
+              //   window.location.pathname === "/artwork" ||
+              //   window.location.pathname === "/bed"
+              // }
+              // to={"/category" || "/almira" || "/artwork" || "/bed"}
               to='/category'
+              isActive={() =>
+                ["/category", "/almira", "/artwork", "/bed"].includes(pathname)
+              }
               className='category__nav category__headerBlk'
               activeClassName='category__active'>
               Categories

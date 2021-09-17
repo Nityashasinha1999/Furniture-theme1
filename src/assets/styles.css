@@ -494,6 +494,9 @@ color: #2F243A;
         padding-bottom: 40px;
         row-gap: 35px;
       }
+      .App .py-4{
+        padding-top: 23px;
+      }
       .card__about{
         background-color: #ffffff;
         display: flex;
