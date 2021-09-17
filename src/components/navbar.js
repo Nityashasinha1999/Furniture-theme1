@@ -1,10 +1,16 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
+import down from "../assets/images/icons/down-ar.png";
 
 function Navbar() {
   const { pathname } = useLocation();
+  const [display, setDisplay] = useState(false);
+
+  const toggle = () => {
+    setDisplay(!display);
+  };
   return (
     <div className='App'>
       <div className='navB'>
@@ -33,20 +39,18 @@ function Navbar() {
 
             <NavLink
               exact
-              // to={
-              //   window.location.pathname === "/almira" ||
-              //   window.location.pathname === "/artwork" ||
-              //   window.location.pathname === "/bed"
-              // }
-              // to={"/category" || "/almira" || "/artwork" || "/bed"}
               to='/category'
               isActive={() =>
                 ["/category", "/almira", "/artwork", "/bed"].includes(pathname)
               }
               className='category__nav category__headerBlk'
               activeClassName='category__active'>
-              Categories
-              <div className='category__sub'>
+              <span className='cat__arr'>
+                <p>Categories</p>
+
+                <img src={down} alt='down' onClick={toggle} />
+              </span>
+              <div className='category__sub d-none-mob'>
                 <ul>
                   <Link to='/almira'>Almirah</Link>
                   <Link to='/artwork'>Artwork</Link>
@@ -59,6 +63,21 @@ function Navbar() {
                   <Link to='/'>Wood</Link>
                 </ul>
               </div>
+              {display == true ? (
+                <ul className='d-none-desk'>
+                  <Link to='/almira'>Almirah</Link>
+                  <Link to='/artwork'>Artwork</Link>
+                  <Link to='/bed'>Bed</Link>
+                  <Link to='/'>Chairs</Link>
+                  <Link to='/'>Door</Link>
+                  <Link to='/'>Dining Sets</Link>
+                  <Link to='/'>Sculpture</Link>
+                  <Link to='/'>Tables</Link>
+                  <Link to='/'>Wood</Link>
+                </ul>
+              ) : (
+                <p></p>
+              )}
             </NavLink>
             <NavLink
               exact

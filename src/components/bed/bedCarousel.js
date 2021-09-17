@@ -21,17 +21,17 @@ class BedCarousel extends React.Component {
       navContainer: ".custom-nav",
       responsive: {
         0: {
-          items: 3,
+          items: 1,
           nav: false,
           dots: true,
-          margin: 30,
+          margin: 0,
           smartSpeed: 700,
           animateIn: "linear",
           animateOut: "linear",
           stagePadding: 0,
         },
         450: {
-          items: 3,
+          items: 1,
           nav: false,
           dots: true,
           smartSpeed: 700,
@@ -39,8 +39,8 @@ class BedCarousel extends React.Component {
           animateOut: "linear",
         },
         600: {
-          items: 3,
-          margin: 15,
+          items: 1,
+          margin: 0,
           nav: false,
           dots: true,
           smartSpeed: 700,

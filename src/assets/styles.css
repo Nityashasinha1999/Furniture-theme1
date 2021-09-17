@@ -20,6 +20,18 @@
     margin: 0;
   }
   /*navbar*/
+  .d-none-desk{
+    display: none;
+  }
+  .cat__arr{
+    display: flex;
+align-items: center;
+gap: 5px;
+  }
+  .cat__arr img{
+    width: 12px;
+    height: 6px;
+  }
   .navB {
     height: 138px;
     width: 100%;
@@ -75,7 +87,7 @@
     font-size: 18px;
     line-height: 27px;
     /* identical to box height */
-    
+  
     
     color: #404040;
   }
@@ -83,7 +95,7 @@
     position: relative;
   }
   .category__headerBlk:hover .category__sub{
-    display: block !important;
+    display: block;
   }
   .category__sub{
     display: none;
