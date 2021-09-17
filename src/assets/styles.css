@@ -331,7 +331,7 @@ position: relative;
               line-height: 19px;
               background: url("../assets/images/icons/prev-disabled.png");
               background-repeat: no-repeat;
-              background-position: left 8px top 13px;
+              background-position: left 8px top 15px;
               color: #ACACAC !important;
     }
     a.nextBttn{
@@ -339,7 +339,7 @@ position: relative;
         box-shadow: 0px 10px 21px rgb(162 162 162 / 25%);
         background: url("../assets/images/icons/next-active.png");
         background-repeat: no-repeat;
-        background-position: right 8px top 17px;
+        background-position: right 8px top 15px;
         border-radius: 4px;
         font-weight: 700;
           font-size: 20px;
@@ -358,9 +358,9 @@ position: relative;
         li.next.paginationDisabled a.nextBttn{
         font-weight: 600;
         font-size: 16px;
-        background: url("../assets/images/icons/prev-disabled.png");
+        background: url("../assets/images/icons/next-disabled.png");
         background-repeat: no-repeat;
-        background-position: right 8px top 13px;
+        background-position: right 8px top 15px;
         line-height: 19px;
         color: #ACACAC;
         }
