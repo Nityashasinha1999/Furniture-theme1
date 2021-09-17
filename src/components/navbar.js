@@ -48,7 +48,7 @@ function Navbar() {
               Categories
               <div className='category__sub'>
                 <ul>
-                  <Link to='/almira'>Almira</Link>
+                  <Link to='/almira'>Almirah</Link>
                   <Link to='/artwork'>Artwork</Link>
                   <Link to='/bed'>Bed</Link>
                   <Link to='/'>Chairs</Link>

@@ -72,7 +72,7 @@ function Almira() {
   };
   return (
     <div className='App container'>
-      <p className='cat__heading'>Almiras</p>
+      <p className='cat__heading'>Almirahs</p>
       <div className=' py-4'>
         <div className='row cat__blk'>{displayUsers}</div>
         <div className='reviewsPaginationWrap'>
