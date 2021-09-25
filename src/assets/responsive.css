@@ -23,6 +23,7 @@
 .new__carousel{
   padding: 31px;
 }
+
 }
 @media (max-width:999px) {
   .d-none-mob, .nav-desk{
@@ -97,6 +98,9 @@
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+    }
+    .new__carousel .owl-carousel.owl-drag .owl-item {
+      width: 322px !important;
     }
     
     /* .nav > #nav-check:not(:checked) ~ .nav-links {
@@ -241,9 +245,11 @@
 .carousel__info .c__desc {
   font-size: 22px;
   width: 236px;
+  text-decoration-thickness: 6px;
 }
 .carousel__info .c__price {
   font-size: 20px;
+  
 }
 .img__wrap img {
   width: 329px;
@@ -251,6 +257,14 @@
 }
 .nav > .nav-links{
   top: 60px
+}
+.img__wrap .title p{
+  font-size: 23px;
+}
+.img__wrap .title {
+  position: absolute;
+  bottom: 39px;
+  left: 18px;
 }
 }
 @media (max-width:375px) {

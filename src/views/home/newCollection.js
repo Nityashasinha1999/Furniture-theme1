@@ -57,7 +57,7 @@ class NewCollection extends React.Component {
           animateIn: "linear",
           animateOut: "linear",
         },
-        1399: {
+        1199: {
           center: true,
           nav: false,
           autoHeight: false,
@@ -81,12 +81,12 @@ class NewCollection extends React.Component {
             {JsonData.length && (
               <OwlCarousel
                 className='owl-theme'
-                loop={false}
+                loop={true}
                 center={false}
                 // margin={30}
                 margin={60}
                 startPosition={1}
-                items={1}
+                items={3}
                 dots={true}
                 responsive={this.state.responsive}>
                 {JsonData.map((bs, index) => {

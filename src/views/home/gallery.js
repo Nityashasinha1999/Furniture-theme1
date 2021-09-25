@@ -26,6 +26,9 @@ class Gallery extends React.Component {
                       <div className='gallery__wrap'>
                         <div className='img__wrap'>
                           <img src={bs.image} alt='bed' />
+                          <div className='title'>
+                            <p>{bs.name}</p>
+                          </div>
                         </div>
                       </div>
                     </div>

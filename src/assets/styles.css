@@ -5,7 +5,7 @@
   body {
     margin: 0px;
     font-family: 'segoe ui';
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
   }
   .container{
     max-width: 1200px;
@@ -273,6 +273,9 @@ font-size: 48px;
 line-height: 120%;
 /* or 58px */
 width: 600px;
+text-decoration: underline;
+text-decoration-color: #EBCB19;
+text-decoration-thickness: 10px;
 
 color: #FFFFFF;
   }
@@ -307,6 +310,10 @@ font-weight: 500;
 font-size: 48px;
 line-height: 120%;
 /* or 58px */
+
+text-decoration: underline;
+text-decoration-color: #EBCB19;
+text-decoration-thickness: 10px;
 
 text-align: center;
 color: #2B2B2B
@@ -360,6 +367,29 @@ color: #373737;
    }
   .full__img img{
     width: 616px;
+  }
+  .img__wrap{
+    position: relative;
+  }
+  .img__wrap .title{
+    
+    position: absolute;
+    bottom: 39px;
+    left: 39px;
+
+  }
+  .img__wrap .title p{
+    font-family: "Ubuntu", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 120%;
+border-bottom:  5px solid #EBCB19;
+
+/* or 38px */
+
+
+color: #FFFFFF;
   }
 /*category*/
 .category__blk{
@@ -553,6 +583,9 @@ line-height: 34px;
 
 color: #2F243A;
 
+        }
+        .new__carousel .owl-carousel.owl-drag .owl-item{
+          width: 400px !important;
         }
         .price__wrap .price{
           font-weight: 700;
