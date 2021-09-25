@@ -39,7 +39,7 @@ class Footer extends React.Component {
                   <ul>
                     <li>Sofa</li>
                     <li>Bed</li>
-                    <li>Artwork</li>
+                    <li>Idol</li>
                     <li>Sculpture</li>
                     <li>Door</li>
                   </ul>
@@ -48,7 +48,7 @@ class Footer extends React.Component {
                     <li>Chairs</li>
                     <li>Tables</li>
                     <li>Almira</li>
-                    <li>Wood</li>
+                    {/* <li>Wood</li> */}
                   </ul>
                 </div>
               </div>

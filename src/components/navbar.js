@@ -79,7 +79,7 @@ function Navbar() {
                       Almirah
                     </Link>
                     <Link to='/artwork' onClick={navD}>
-                      Artwork
+                      Idol
                     </Link>
                     <Link to='/bed' onClick={navD}>
                       Bed
@@ -161,7 +161,7 @@ function Navbar() {
               <div className='category__sub d-none-mob'>
                 <ul>
                   <Link to='/almira'>Almirah</Link>
-                  <Link to='/artwork'>Artwork</Link>
+                  <Link to='/artwork'>Idol</Link>
                   <Link to='/bed'>Bed</Link>
                   <Link to='/chair'>Chairs</Link>
                   <Link to='/door'>Door</Link>

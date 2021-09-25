@@ -190,7 +190,7 @@ color: #FFFFFF;
 line-height: 24px;
 width: 384px;
 padding-top: 22px;
-color: #C7C6C6;
+color: #FFFFFF;
   }
   .footer__blk .follow__wrap{
     display: flex;
@@ -220,21 +220,21 @@ opacity: 0.47;
   .category_footer > ul > li{
     font-size: 16px;
 line-height: 26px;
-color: #C7C6C6;
+color: #FFFFFF;
   }
   .footer__blk .add_sec1{
     font-size: 16px;
 line-height: 24px;
 margin: 0;
 padding-top: 22px;
-color: #C7C6C6;
+color: #FFFFFF;
   }
   .footer__blk .add_details{
     font-size: 16px;
 line-height: 24px;
 padding: 0;
 margin: 0;
-color: #C7C6C6;
+color: #FFFFFF;
   }
   /*home*/
   .home__banner{
