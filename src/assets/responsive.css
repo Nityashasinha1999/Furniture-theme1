@@ -14,6 +14,15 @@
   .contactUsDetail .sec1 .mailText{
     font-size: 28px;
   }
+  .c__Img {
+    height: 449px;
+}
+.gallery{
+  justify-content: center;
+}
+.new__carousel{
+  padding: 31px;
+}
 }
 @media (max-width:999px) {
   .d-none-mob, .nav-desk{
@@ -76,7 +85,7 @@
       position: fixed;
       display: block;
       width: 100%;
-      background: #3E6364;
+      background: #B30000;
       height: 100vh;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -118,6 +127,15 @@
       flex-direction: column;
       gap: 40px;
   }
+  .card__sq{
+    width: auto;
+  }
+  .card__new{
+    width: auto;
+  }
+  .gallery{
+  gap: 30px;
+  }
 }
 @media (max-width:600px) {
   .f_category{
@@ -149,6 +167,34 @@
 }
 .contact-heading .small{
   text-align: center;
+}
+.gallery{
+
+}
+.carousel__info{
+  height: 450px;
+}
+.home__banner{
+  flex-direction: column-reverse;
+}
+.carousel__info .c__desc{
+  font-size: 28px;
+  width: 436px;
+}
+.carousel__info .c__price{
+  font-size: 24px;
+}
+.carousel__info .c__info{
+  font-size: 14px;
+}
+.new__collection {
+  padding-top: 48px;
+}
+.new__collection .heading{
+  font-size: 30px;
+}
+.new__collection {
+  padding-top: 26px;
 }
 }
 @media (max-width:450px) {
@@ -192,8 +238,34 @@
 .about__wrap{
   padding-top: 10px;
 }
+.carousel__info .c__desc {
+  font-size: 22px;
+  width: 236px;
+}
+.carousel__info .c__price {
+  font-size: 20px;
+}
+.img__wrap img {
+  width: 329px;
+  height: 329px;
+}
+.nav > .nav-links{
+  top: 60px
+}
 }
 @media (max-width:375px) {
+  .carousel__info{
+    padding-left: 32px;
+  }
+  .card__sq{
+    height: 190px;
+  }
+  .card__name{
+    font-size: 19px;
+  }
+  .card__price{
+    font-size: 25px;
+  }
   .col-md-3 {
     max-width: 85%;
 }
@@ -226,5 +298,8 @@
 }
 .reviewsPaginationWrap{
   margin-right: 0px;
+}
+.new__carousel {
+  padding: 1px;
 }
 }

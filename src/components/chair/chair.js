@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import JsonData from "./almira.json";
-import AlmiraCarousel from "./almiraCarousel";
+import JsonData from "./chair.json";
+import ChairCarousel from "./chairCarouel";
 
-function Almira() {
+function Chair() {
   const [posts, setPosts] = useState(JsonData.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 12;
@@ -21,7 +21,7 @@ function Almira() {
                 {/* <Link to='/product'>
                   <img src={post.image} className='bookImg' alt='bookImg' />
                 </Link> */}
-                <AlmiraCarousel />
+                <ChairCarousel />
               </div>
               <p className='order_no'>12345678 </p>
               <div className='cover__cat'>
@@ -72,7 +72,7 @@ function Almira() {
   };
   return (
     <div className='App container'>
-      <p className='cat__heading'>Almirahs</p>
+      <p className='cat__heading'>Beds</p>
       <div className=' py-4'>
         <div className='row cat__blk'>{displayUsers}</div>
         <div className='reviewsPaginationWrap'>
@@ -101,4 +101,4 @@ function Almira() {
   );
 }
 
-export default Almira;
+export default Chair;

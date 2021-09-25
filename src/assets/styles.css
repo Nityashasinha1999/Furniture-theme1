@@ -123,12 +123,18 @@ gap: 5px;
     cursor: pointer;
     text-decoration: none;
   }
-  .category__active{
-    color: #EBCB19 !important;
+  .active.category__active{
+    color: #000000 !important;
+    font-weight: 700;
+  }
+  a.category__nav.category__active{
+    color: #000000 !important;
+    font-weight: 700;
   }
   
   .nav > .nav-links > a:hover {
-    color: #EBCB19;
+    color: #000000;
+    font-weight: 700 !important;
   }
   
   .nav > #nav-check {
@@ -154,10 +160,11 @@ color: #EBCB19;
   }
   /*footer*/
   .footer__wrap{
-    background: #3E6364;
+    background: #B30000;
     width: 100%;
     padding-top: 59px;
     padding-bottom: 59px;
+    margin-top: 50px;
   }
   .footer__blk{
     display: flex;
@@ -229,7 +236,132 @@ padding: 0;
 margin: 0;
 color: #C7C6C6;
   }
-/*bed*/
+  /*home*/
+  .home__banner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+     background-color: #B30000;
+  }
+  .home__bannerWrap{
+    background-color: #B30000;
+  }
+  .carousel__info{
+padding-right: 30px;
+padding-left: 67px;
+padding-top: 40px;
+  }
+.c__Img{
+  height: auto;
+}
+.home__carousel .owl-theme .owl-dots .owl-dot.active span{
+  background: #FFFFFF !important;
+}
+.home__carousel .owl-theme .owl-dots .owl-dot span{
+  background-color: #FF8888 !important;
+}
+.home__carousel .owl-theme .owl-nav.disabled + .owl-dots{
+  margin-top: -41px;
+  position: absolute;
+  left: 24%;
+}
+  .carousel__info .c__desc{
+    font-family: "Ubuntu", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 120%;
+/* or 58px */
+width: 600px;
+
+color: #FFFFFF;
+  }
+  .carousel__info .c__price{
+    font-family: "Ubuntu", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 41px;
+padding-top: 9px;
+color: #FFFFFF;
+  }
+  .carousel__info .c__info{
+    font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+padding-top: 13px;
+color: #FFFFFF;
+  }
+  .carousel__info .c__info_blk{
+    padding-top: 7px;
+  }
+  .new__collection{
+    padding-top: 76px;
+  }
+  .new__collection .heading{
+    font-family: "Ubuntu", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 120%;
+/* or 58px */
+
+text-align: center;
+color: #2B2B2B
+  }
+  .card__new{
+    background: #FFFFFF;
+box-shadow: 0px 4px 5px rgba(207, 207, 207, 0.25);
+border-radius: 4px;
+padding: 34px;
+width: 400px;
+  }
+  .card__sq{
+    background: #C4C4C4;
+    width: 319px;
+    height: 261px;
+  }
+  .card__name{
+    font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+padding-top: 28px;
+color: #303030;
+  }
+  .card__price{
+    font-family: "Ubuntu", sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 41px;
+
+color: #373737;
+  }
+  .new__carousel .owl-theme .owl-dots .owl-dot.active span{
+    background: #B30000!important;
+  }
+  .new__carousel .owl-theme .owl-dots .owl-dot span{
+    background: #C1C1C1!important;
+  }
+
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+   }
+   .img__wrap img{
+    width: 398px;
+    height: 444px;
+   }
+  .full__img img{
+    width: 616px;
+  }
+/*category*/
 .category__blk{
     background: #E5E5E5;
 }
@@ -289,13 +421,13 @@ position: relative;
     width: 378px;
     height: 407px;
 }
-.owl-carousel .owl-stage-outer{
+.homeOPBlkCarousel .owl-carousel .owl-stage-outer{
     height: 407px;
 }
 .owl-carousel.owl-drag .owl-item{
     width: 378px;
 }
-.owl-theme .owl-dots {
+.homeOPBlkCarousel .owl-theme .owl-dots {
     text-align: left !important;
 }
 .reviewsPaginationWrap {
@@ -377,7 +509,7 @@ position: relative;
         color: #ACACAC;
         }
         .paginationActive a {
-            background: #3E6364;
+            background: #B30000;
           border-radius: 50%;
           padding: 4px 11px;
           font-size: 20px;
@@ -466,7 +598,7 @@ color: #2F243A;
           padding-top: 30px;
       }
       .a__profile{
-          background: #3E6364;
+          background: #B30000;
           display: flex;
           flex-direction: column;
           align-items: center;

@@ -52,11 +52,18 @@ function Navbar() {
 
               <NavLink
                 exact
-                to='/category'
+                to='/'
                 isActive={() =>
-                  ["/category", "/almira", "/artwork", "/bed"].includes(
-                    pathname
-                  )
+                  [
+                    "/almira",
+                    "/artwork",
+                    "/bed",
+                    "/chair",
+                    "/door",
+                    "dining",
+                    "/sculpture",
+                    "/tables",
+                  ].includes(pathname)
                 }
                 className='category__nav category__headerBlk'
                 activeClassName='category__active'>
@@ -77,12 +84,21 @@ function Navbar() {
                     <Link to='/bed' onClick={navD}>
                       Bed
                     </Link>
-                    <Link to='/'>Chairs</Link>
-                    <Link to='/'>Door</Link>
-                    <Link to='/'>Dining Sets</Link>
-                    <Link to='/'>Sculpture</Link>
-                    <Link to='/'>Tables</Link>
-                    <Link to='/'>Wood</Link>
+                    <Link to='/chair' onClick={navD}>
+                      Chairs
+                    </Link>
+                    <Link to='/door' onClick={navD}>
+                      Door
+                    </Link>
+                    <Link to='/dining' onClick={navD}>
+                      Dining Sets
+                    </Link>
+                    <Link to='/sculpture' onClick={navD}>
+                      Sculpture
+                    </Link>
+                    <Link to='/tables' onClick={navD}>
+                      Tables
+                    </Link>
                   </ul>
                 ) : (
                   <p></p>
@@ -122,9 +138,18 @@ function Navbar() {
 
             <NavLink
               exact
-              to='/category'
+              to='/'
               isActive={() =>
-                ["/category", "/almira", "/artwork", "/bed"].includes(pathname)
+                [
+                  "/almira",
+                  "/artwork",
+                  "/bed",
+                  "/chair",
+                  "/door",
+                  "dining",
+                  "/sculpture",
+                  "/tables",
+                ].includes(pathname)
               }
               className='category__nav category__headerBlk'
               activeClassName='category__active'>
@@ -138,12 +163,11 @@ function Navbar() {
                   <Link to='/almira'>Almirah</Link>
                   <Link to='/artwork'>Artwork</Link>
                   <Link to='/bed'>Bed</Link>
-                  <Link to='/'>Chairs</Link>
-                  <Link to='/'>Door</Link>
-                  <Link to='/'>Dining Sets</Link>
-                  <Link to='/'>Sculpture</Link>
-                  <Link to='/'>Tables</Link>
-                  <Link to='/'>Wood</Link>
+                  <Link to='/chair'>Chairs</Link>
+                  <Link to='/door'>Door</Link>
+                  <Link to='/dining'>Dining Sets</Link>
+                  <Link to='/sculpture'>Sculpture</Link>
+                  <Link to='/tables'>Tables</Link>
                 </ul>
               </div>
             </NavLink>

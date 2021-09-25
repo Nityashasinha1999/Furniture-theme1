@@ -53,12 +53,12 @@ class Footer extends React.Component {
                 </div>
               </div>
             </div>
-            <div className='sec-1'>
+            <div className='sec-1' style={{ width: 334 }}>
               <div className='about'>
                 <p className='about__heading'>Contact Us</p>
                 <p className='add_sec1'>Address-</p>
                 <p className='add_details'>
-                  shobhapur road tiraha pipariya m.p
+                  shobhapur road tiraha, near Axix Bank pipariya, m.p
                 </p>
                 <p className='add_sec1'>Contact no:-</p>
                 <p className='add_details'>7000799601</p>

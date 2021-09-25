@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import JsonData from "./artwork.json";
-import BedCarousel from "./artworkCarousel";
+import ArtworkCarousel from "./artworkCarousel";
 
 function ArtWork() {
   const [posts, setPosts] = useState(JsonData.slice(0, 50));
@@ -21,7 +21,7 @@ function ArtWork() {
                 {/* <Link to='/product'>
                   <img src={post.image} className='bookImg' alt='bookImg' />
                 </Link> */}
-                <BedCarousel />
+                <ArtworkCarousel />
               </div>
 
               <p className='order_no'>12345678 </p>
