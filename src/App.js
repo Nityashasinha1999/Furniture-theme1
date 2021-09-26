@@ -10,13 +10,14 @@ import Footer from "./components/footer/footer";
 import About from "./views/aboutUs/about";
 import ContactUs from "./views/contact/contact";
 import Almira from "./components/almira/almira";
-import ArtWork from "./components/artwork/artwork";
+import Idol from "./components/artwork/idol";
 import Home from "./views/home/home";
 import Dining from "./components/diningTables/diningTables";
 import Sculpture from "./components/Sculpture/sculpture";
 import Door from "./components/door/door";
 import Chair from "./components/chair/chair";
 import Tables from "./components/Tables/tables";
+import Sofa from "./components/sofa/sofa";
 
 function App() {
   return (
@@ -27,12 +28,13 @@ function App() {
           <Route path='/' component={Home} exact />
           <Route path='/bed' component={Bed} exact />
           <Route path='/almira' component={Almira} exact />
-          <Route path='/artwork' component={ArtWork} exact />
+          <Route path='/idol' component={Idol} exact />
           <Route path='/dining' component={Dining} exact />
           <Route path='/sculpture' component={Sculpture} exact />
           <Route path='/door' component={Door} exact />
           <Route path='/chair' component={Chair} exact />
           <Route path='/tables' component={Tables} exact />
+          <Route path='/sofa' component={Sofa} exact />
           <Route path='/about' component={About} exact />
           <Route path='/contact' component={ContactUs} exact />
         </Switch>

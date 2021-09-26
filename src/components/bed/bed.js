@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import JsonData from "./bed.json";
+import data from "./bedData";
 import BedCarousel from "./bedCarousel";
 
 function Bed() {
-  const [posts, setPosts] = useState(JsonData.slice(0, 50));
+  const [posts, setPosts] = useState(data.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 12;
   const pagesVisited = pageNumber * usersPerPage;
@@ -72,7 +72,7 @@ function Bed() {
   };
   return (
     <div className='App container'>
-      <p className='cat__heading'>Beds</p>
+      <p className='cat__heading'>Bed</p>
       <div className=' py-4'>
         <div className='row cat__blk'>{displayUsers}</div>
         <div className='reviewsPaginationWrap'>

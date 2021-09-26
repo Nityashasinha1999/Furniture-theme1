@@ -4,9 +4,9 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import data from "./diningData";
+import data from "./idoldata";
 
-class DiningCarousel extends React.Component {
+class IdolCarousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -114,4 +114,4 @@ class DiningCarousel extends React.Component {
   }
 }
 
-export default DiningCarousel;
+export default IdolCarousel;

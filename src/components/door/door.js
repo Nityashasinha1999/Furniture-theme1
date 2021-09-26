@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import JsonData from "./door.json";
+import data from "./doorData";
 import DoorCarousel from "./doorCarousel";
 
 function Door() {
-  const [posts, setPosts] = useState(JsonData.slice(0, 50));
+  const [posts, setPosts] = useState(data.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 12;
   const pagesVisited = pageNumber * usersPerPage;

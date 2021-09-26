@@ -4,7 +4,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import JsonData from "./newCollection.json";
+import data from "./newCollectionData";
 
 class NewCollection extends React.Component {
   constructor(props) {
@@ -78,7 +78,7 @@ class NewCollection extends React.Component {
       <div className=''>
         <div className=''>
           <div className='new__carousel'>
-            {JsonData.length && (
+            {data.length && (
               <OwlCarousel
                 className='owl-theme'
                 loop={true}
@@ -89,12 +89,14 @@ class NewCollection extends React.Component {
                 items={3}
                 dots={true}
                 responsive={this.state.responsive}>
-                {JsonData.map((bs, index) => {
+                {data.map((bs, index) => {
                   console.log(bs, "po");
                   return (
                     <div className='new__collection'>
                       <div className='card__new'>
-                        <div className='card__sq'></div>
+                        <div className='card__sq'>
+                          <img src={bs.image} alt='book' />
+                        </div>
                         <div className=''>
                           <div className=''>
                             <p className='card__name'>{bs.name}</p>

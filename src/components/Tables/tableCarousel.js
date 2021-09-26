@@ -4,7 +4,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import JsonData from "./tables.json";
+import data from "./tablesData";
 
 class TableCarousel extends React.Component {
   constructor(props) {
@@ -78,7 +78,7 @@ class TableCarousel extends React.Component {
       <div className=''>
         <div className=''>
           <div className='homeOPBlkCarousel'>
-            {JsonData.length && (
+            {data.length && (
               <OwlCarousel
                 className='owl-theme'
                 loop={true}
@@ -89,13 +89,19 @@ class TableCarousel extends React.Component {
                 items={1}
                 dots={true}
                 responsive={this.state.responsive}>
-                {JsonData.map((bs, index) => {
-                  console.log(bs, "po");
+                {data.map((bs, index) => {
+                  console.log(bs.image, "po");
                   return (
                     <div className='homeCBlk'>
-                      <div className='homeCImg'>
-                        <img src={bs.image} alt='book' className='bookImg' />
-                      </div>
+                      {console.log(bs.image, "data")}
+                      {bs.image.map((k, index) => {
+                        return (
+                          <div className='homeCImg'>
+                            {console.log(k.image, "poss")}
+                            <img src={k.image} alt='book' className='bookImg' />
+                          </div>
+                        );
+                      })}
                     </div>
                   );
                 })}

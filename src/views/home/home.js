@@ -4,7 +4,7 @@ import React from "react";
 import HomeCarousel from "./homeCarousel";
 import NewCollection from "./newCollection";
 import bed from "../../assets/images/bed/1.png";
-import JsonCarousel from "./gallery.json";
+import data from "./galleryData";
 import Gallery from "./gallery";
 
 function Home() {

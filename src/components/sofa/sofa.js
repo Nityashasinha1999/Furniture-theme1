@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import JsonData from "./artwork.json";
-import ArtworkCarousel from "./artworkCarousel";
+import data from "./sofaData";
+import SofaCarousel from "./sofaCarousel";
 
-function ArtWork() {
-  const [posts, setPosts] = useState(JsonData.slice(0, 50));
+function Sofa() {
+  const [posts, setPosts] = useState(data.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 12;
   const pagesVisited = pageNumber * usersPerPage;
@@ -21,9 +21,8 @@ function ArtWork() {
                 {/* <Link to='/product'>
                   <img src={post.image} className='bookImg' alt='bookImg' />
                 </Link> */}
-                <ArtworkCarousel />
+                <SofaCarousel />
               </div>
-
               <p className='order_no'>12345678 </p>
               <div className='cover__cat'>
                 <div className='price__wrap'>
@@ -73,7 +72,7 @@ function ArtWork() {
   };
   return (
     <div className='App container'>
-      <p className='cat__heading'>Artwork</p>
+      <p className='cat__heading'>Sofa</p>
       <div className=' py-4'>
         <div className='row cat__blk'>{displayUsers}</div>
         <div className='reviewsPaginationWrap'>
@@ -102,4 +101,4 @@ function ArtWork() {
   );
 }
 
-export default ArtWork;
+export default Sofa;

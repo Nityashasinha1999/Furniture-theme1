@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import JsonData from "./chair.json";
-import ChairCarousel from "./chairCarouel";
+import ChairCarousel from "./chairCarousel";
+import data from "./chairData";
 
 function Chair() {
-  const [posts, setPosts] = useState(JsonData.slice(0, 50));
+  const [posts, setPosts] = useState(data.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 12;
   const pagesVisited = pageNumber * usersPerPage;
@@ -72,7 +72,7 @@ function Chair() {
   };
   return (
     <div className='App container'>
-      <p className='cat__heading'>Beds</p>
+      <p className='cat__heading'>Chair</p>
       <div className=' py-4'>
         <div className='row cat__blk'>{displayUsers}</div>
         <div className='reviewsPaginationWrap'>

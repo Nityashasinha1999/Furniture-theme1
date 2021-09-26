@@ -2,11 +2,10 @@
 
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import data from "./sculptureData";
+import data from "./idoldata";
+import IdolCarousel from "./idolCarousel";
 
-import SculptureCarousel from "./sculptureCarousel";
-
-function Sculpture() {
+function ArtWork() {
   const [posts, setPosts] = useState(data.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 12;
@@ -22,7 +21,7 @@ function Sculpture() {
                 {/* <Link to='/product'>
                   <img src={post.image} className='bookImg' alt='bookImg' />
                 </Link> */}
-                <SculptureCarousel />
+                <IdolCarousel />
               </div>
               <p className='order_no'>12345678 </p>
               <div className='cover__cat'>
@@ -73,7 +72,7 @@ function Sculpture() {
   };
   return (
     <div className='App container'>
-      <p className='cat__heading'>Sculpture</p>
+      <p className='cat__heading'>Idol</p>
       <div className=' py-4'>
         <div className='row cat__blk'>{displayUsers}</div>
         <div className='reviewsPaginationWrap'>
@@ -102,4 +101,4 @@ function Sculpture() {
   );
 }
 
-export default Sculpture;
+export default ArtWork;

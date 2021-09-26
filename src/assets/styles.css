@@ -325,8 +325,8 @@ border-radius: 4px;
 padding: 34px;
 width: 400px;
   }
-  .card__sq{
-    background: #C4C4C4;
+  .card__sq img{
+  
     width: 319px;
     height: 261px;
   }

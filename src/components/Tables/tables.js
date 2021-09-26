@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import JsonData from "./tables.json";
+import data from "./tablesData";
 import TableCarousel from "./tableCarousel";
 
 function Tables() {
-  const [posts, setPosts] = useState(JsonData.slice(0, 50));
+  const [posts, setPosts] = useState(data.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
   const usersPerPage = 12;
   const pagesVisited = pageNumber * usersPerPage;

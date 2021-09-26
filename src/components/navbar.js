@@ -56,12 +56,13 @@ function Navbar() {
                 isActive={() =>
                   [
                     "/almira",
-                    "/artwork",
+                    "/idol",
                     "/bed",
                     "/chair",
                     "/door",
                     "dining",
                     "/sculpture",
+                    "/sofa",
                     "/tables",
                   ].includes(pathname)
                 }
@@ -78,7 +79,7 @@ function Navbar() {
                     <Link to='/almira' onClick={navD}>
                       Almirah
                     </Link>
-                    <Link to='/artwork' onClick={navD}>
+                    <Link to='/idol' onClick={navD}>
                       Idol
                     </Link>
                     <Link to='/bed' onClick={navD}>
@@ -95,6 +96,9 @@ function Navbar() {
                     </Link>
                     <Link to='/sculpture' onClick={navD}>
                       Sculpture
+                    </Link>
+                    <Link to='/sofa' onClick={navD}>
+                      Sofa
                     </Link>
                     <Link to='/tables' onClick={navD}>
                       Tables
@@ -142,12 +146,13 @@ function Navbar() {
               isActive={() =>
                 [
                   "/almira",
-                  "/artwork",
+                  "/idol",
                   "/bed",
                   "/chair",
                   "/door",
                   "dining",
                   "/sculpture",
+                  "/sofa",
                   "/tables",
                 ].includes(pathname)
               }
@@ -161,12 +166,13 @@ function Navbar() {
               <div className='category__sub d-none-mob'>
                 <ul>
                   <Link to='/almira'>Almirah</Link>
-                  <Link to='/artwork'>Idol</Link>
+                  <Link to='/idol'>Idol</Link>
                   <Link to='/bed'>Bed</Link>
                   <Link to='/chair'>Chairs</Link>
                   <Link to='/door'>Door</Link>
                   <Link to='/dining'>Dining Sets</Link>
                   <Link to='/sculpture'>Sculpture</Link>
+                  <Link to='/sofa'>Sofa</Link>
                   <Link to='/tables'>Tables</Link>
                 </ul>
               </div>
